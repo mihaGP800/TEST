@@ -30,15 +30,15 @@ test('give list names streets of govermentBuildings', () => {
 
     const search = city.govermentBuildings.map(nameStreet => nameStreet.address.street.title.split(' ')[0])
 
-    const welcomePeopleFromStreets = city.houses.map(h=>`welcome people from ${h.address.street.title}`)
+    const welcomePeopleFromStreets = city.houses.map(h => `welcome people from ${h.address.street.title}`)
 
-    console.log(welcomePeopleFromStreets)
+    // console.log(welcomePeopleFromStreets)
     expect(welcomePeopleFromStreets.length).toBe(3)
     expect(welcomePeopleFromStreets[2]).toBe('welcome people from Bad street')
 
     expect(search[0]).toBe('Central')
     expect(search[1]).toBe('South')
-    expect(search).toStrictEqual([ 'Central', 'South' ])
+    expect(search).toStrictEqual(['Central', 'South'])
     expect(search.length).toBe(2)
 
 })

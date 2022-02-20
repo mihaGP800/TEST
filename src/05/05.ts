@@ -52,6 +52,7 @@ export const transformator = (man: peopleType) => {
     }
 }
 
-export const messages = people.map(p => {
+const callbackfn = (p: peopleType) => {
     return `Hello student ${p.name.split(' ')[0]}`
-})
+};
+export const messages = people.map(callbackfn)
