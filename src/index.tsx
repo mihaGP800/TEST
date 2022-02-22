@@ -9,6 +9,7 @@ import {addSkill} from "./03/03";
 ReactDOM.render(
   <React.StrictMode>
     <App />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
