@@ -5,6 +5,8 @@ export const moto = {
     3: {id: 12, name: 'Aprilia'},
 }
 
+console.log(Object.keys(moto).length)
+
 type UserType = {
     [key: string]: { id: number, name: string }
 }
